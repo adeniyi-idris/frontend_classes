@@ -1,0 +1,22 @@
+form{
+    margin-top: 4rem;
+    margin-left: 5rem;
+    margin-right: 10rem;
+}
+
+.input{
+    width: 30%;
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit{
+    width: 31%;
+    background-color: blueviolet;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}

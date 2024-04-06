@@ -1,1 +1,42 @@
-jksk
+.section1, .section2, .section3{
+    background-color: black;
+}
+
+.section1{
+    padding-left: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border: 5px solid red;
+}
+
+.section2{
+    padding-left: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-top: 5rem;
+    border: 5px solid green
+}
+
+.section3{
+    padding-left: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-top: 5rem;
+    border: 5px solid blue
+}
+
+.section4{
+    background-image: linear-gradient(#000000b0, #000000be), url(./bird.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-top: 5rem;
+    height: 200px;
+}
+
+p{
+    color: white;
+}

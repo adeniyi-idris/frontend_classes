@@ -1,0 +1,132 @@
+.row{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 3rem;
+}
+
+p{
+    font-size: 15px;
+    
+}
+
+a{
+    text-decoration: none;
+    color:hsl(236, 13%, 42%);
+    font-family: "Inter";
+}
+
+.hero-section{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero2 h2{
+    color: hsl(35, 77%, 62%);
+    font-size: 2rem;
+}
+
+.web-3{
+    width: 100%;
+}
+
+.content{
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.theme h2{
+    font-family: "Inter";
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.theme-content{
+    margin-left: 9rem;
+}
+
+.button{
+    margin-top: 1rem;
+    display: inline-block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right:20px;
+    color: #fff;
+    background-color:  hsl(5, 85%, 63%);
+}
+
+.hero2{
+    padding: 1rem 2.5rem;
+    margin-left: 3rem;
+    color: #fff;
+    background-color:hsl(240, 100%, 5%);
+    justify-content: center;
+}
+
+.features:nth-child(-n+3){
+    border-bottom: 1.5px solid #fff;
+}
+
+.new-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    overflow: hidden;
+}
+
+.about{
+    display: flex;
+}
+
+.web-2{
+    width: 100%;
+}
+
+.info{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.info h2{
+    color:hsl(233, 8%, 79%); 
+    margin-top: -0.2rem;
+    font-size: 2rem;
+    font-family: "Inter";
+}
+
+.info h4{
+    color: hsl(240, 100%, 5%);
+    margin-top: -0.2rem;
+    font-family: "Inter";
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+
+
+/*.navigation{
+    padding-right: 20rem;
+}*/

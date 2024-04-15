@@ -7,29 +7,40 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link href="./style.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | News homepage</title>
+
 </head>
 
 <body>
-  <section class="row">
-    <nav>
+  <main class="row">
+    <header>
       <div>
         <img src="./assets/images/logo.svg">
       </div>
-      <ul class="navigation">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">New</a></li>
-        <li><a href="#">Popular</a></li>
-        <li><a href="#">Trending</a></li>
-        <li><a href="#">Categories</a></li>
-      </ul>
-    </nav>
-    <div class="hero-section">
+      <input type="checkbox" name="menuButton" id="input">
+      <nav>
+        <ul class="navigation">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </nav>
+      <div>
+        <label for="input">
+
+          <span class="hamburger">hamburger</span>
+
+        </label>
+      </div>
+    </header>
+    <section class="hero-section">
       <div class="hero1">
         <img src="./assets/images/image-web-3-desktop.jpg" class="web-3">
         <div class="content">
@@ -64,8 +75,8 @@
           <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
         </div>
       </div>
-    </div>
-    <div class="new-section">
+    </section>
+    <section class="new-section">
       <div class="about">
         <div>
           <img src="./assets/images/image-retro-pcs.jpg" class="web-2">
@@ -96,12 +107,12 @@
           <p>the pandemic has sparked fresh opportunities.</p>
         </div>
       </div>
+    </section>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Adeniyi Idris Adeleke</a>.
     </div>
-  </section>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Adeniyi Idris Adeleke</a>.
-  </div>
+  </main>
 </body>
 
 </html>

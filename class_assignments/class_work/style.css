@@ -1,0 +1,25 @@
+.heading::before{
+    content: "";
+    background-color: black;
+    height: 3px;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.heading::after{
+    content: "";
+    background-color: black;
+    height: 3px;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: block;
+}
+
+.heading{
+    position: absolute;
+}

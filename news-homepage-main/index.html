@@ -4,64 +4,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link href="./css/style.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-
-  <title>Frontend Mentor | News homepage</title>
-
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Idris | Homepage</title>
 </head>
 
 <body>
-  <main class="row">
-    <header>
+  <main class="main_wrapper">
+
+
+
+
+
+    <header class="main_header">
       <div>
-        <img src="./assets/images/logo.svg">
+        <img src="./assets/images/logo.svg" alt="logo">
       </div>
       <input type="checkbox" name="menuButton" id="input">
-      <nav>
-        <ul class="navigation">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">New</a></li>
-          <li><a href="#">Popular</a></li>
-          <li><a href="#">Trending</a></li>
-          <li><a href="#">Categories</a></li>
+      <nav class="nav_bar">
+        <ul class="nav_list">
+          <li class="navlist"><a href="#" class="navitems">Home</a></li>
+          <li class="navlist"><a href="#" class="navitems">New</a></li>
+          <li class="navlist"><a href="#" class="navitems">Popular</a></li>
+          <li class="navlist"><a href="#" class="navitems">Trending</a></li>
+          <li class="navlist"><a href="#" class="navitems">Categories</a></li>
         </ul>
       </nav>
-      <div>
-        <label for="input">
+      <div class="menuContainer">
+        <label for="input" class="menuButton">
+          <span class="hamburger">
 
-          <span class="hamburger">hamburger</span>
-
+          </span>
         </label>
       </div>
     </header>
-    <section class="hero-section">
-      <div class="hero1">
-        <img src="./assets/images/image-web-3-desktop.jpg" class="web-3">
-        <div class="content">
-          <div class="theme">
-            <h2>
-              The Bright Future of Web 3.0?
-            </h2>
-          </div>
-          <div class="theme-content">
-            <p>
-              We dive into the next evolution of the web that claims to put the power of the platforms back into the
-              hands
-              of the people.
-              But is it really fulfilling its promise?
-            </p>
-            <a href="#" class="button">Read more</a>
-          </div>
+
+
+
+
+    <section class="section1">
+      <div class="wrapper">
+        <div class="hero-pics">
+          <img src="./assets/images/image-web-3-mobile.jpg" alt="img" class="web-2">
+        </div>
+        <div class="text">
+          <h1 class="main-text">
+            The Bright Future of Web 3.0?
+          </h1>
+          <p class="subText">
+            We dive into the next evolution of the web
+            that claims to put the power of the platforms back into the hands of the people.
+            But is it really fulfilling its promise?
+          </p>
+        </div>
+        <div class="text-link">
+          <a href="#" class="link">Read more</a>
         </div>
       </div>
-      <div class="hero2">
-        <h2> New </h2>
+    </section>
+
+
+
+
+    <section class="section2">
+      <div class="wrapper2">
+        <h2 class="features_head"> New </h2>
         <div class="features">
           <h4>Hydrogen VS Electric Cars</h4>
           <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
@@ -76,41 +82,73 @@
         </div>
       </div>
     </section>
-    <section class="new-section">
-      <div class="about">
-        <div>
-          <img src="./assets/images/image-retro-pcs.jpg" class="web-2">
+
+
+
+
+    <section class="section3">
+      <div class="wrapper3">
+        <div class="about">
+          <div>
+            <img src="./assets/images/image-retro-pcs.jpg" class="web-2">
+          </div>
+          <div class="info">
+            <div class="num">
+              <h2>01</h2>
+            </div>
+            <div class="title">
+              <h4>Reviving Retro PCs</h4>
+            </div>
+            <div class="message">
+              <p>happens when old PCs are given modern upgrades?</p>
+            </div>
+          </div>
         </div>
-        <div class="info">
-          <h2>01</h2>
-          <h4>Reviving Retro PCs</h4>
-          <p>happens when old PCs are given modern upgrades?</p>
+        <div class="about">
+          <div>
+            <img src="./assets/images/image-top-laptops.jpg" class="web-2">
+          </div>
+          <div class="info">
+            <div class="num">
+              <h2>02</h2>
+            </div>
+            <div class="title">
+              <h4>10 Laptops of 2022</h4>
+            </div>
+            <div class="message">
+              <p>Our best picks for various needs and budgets.</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="about">
-        <div>
-          <img src="./assets/images/image-top-laptops.jpg" class="web-2">
-        </div>
-        <div class="info">
-          <h2>02</h2>
-          <h4>10 Laptops of 2022</h4>
-          <p>Our best picks for various needs and budgets.</p>
-        </div>
-      </div>
-      <div class="about">
-        <div>
-          <img src="./assets/images/image-gaming-growth.jpg" class="web-2">
-        </div>
-        <div class="info">
-          <h2>03</h2>
-          <h4>The Growth of Gaming</h4>
-          <p>the pandemic has sparked fresh opportunities.</p>
+        <div class="about">
+          <div>
+            <img src="./assets/images/image-gaming-growth.jpg" class="web-2">
+          </div>
+          <div class="info">
+            <div class="num">
+              <h2>03</h2>
+            </div>
+            <div class="title">
+              <h4>The Growth of Gaming</h4>
+            </div>
+            <div class="message">
+              <p>the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
+
+
+
+
+
     <div class="attribution">
+      <p>
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Adeniyi Idris Adeleke</a>.
+      Coded by <br> <a href="#" class="idris">Adeniyi Idris Adeleke</a>. 
+      </p>
     </div>
   </main>
 </body>

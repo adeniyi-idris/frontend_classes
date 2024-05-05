@@ -5,7 +5,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Poppins" sans-serif
+    font-family: "Poppins" sans-serif;
 }
 
 :root{
@@ -49,6 +49,10 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 2rem 0rem;
+}
+
+.cta{
+    margin-right: 0.5rem;
 }
 
 .cta a{

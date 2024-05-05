@@ -53,14 +53,15 @@ a{
 
 .cta{
     margin-right: 0.5rem;
+    page-break-inside: avoid;
 }
 
 .cta a{
     color: var(--Pink);
-    padding: 0.3rem 0.9rem;
+    padding: 0.3rem 1rem;
     border: 1px solid var(--Pink);
     border-radius: 50px;
-    font-size: 10px;
+    font-size: 11px;
 }
 
 .first{

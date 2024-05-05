@@ -17,6 +17,8 @@
     --Weights: 700;
 }
 
+@media only screen and (max-width: 376px) {
+
 h1, h2, h3, h4{
     font-weight: var(--Weights);
     font-family: "Poppins" sans-serif;
@@ -56,12 +58,13 @@ a{
     page-break-inside: avoid;
 }
 
-.cta a{
+.wo{
     color: var(--Pink);
     padding: 0.3rem 1rem;
     border: 1px solid var(--Pink);
     border-radius: 50px;
     font-size: 11px;
+    margin-right: 0.5rem;
 }
 
 .first{
@@ -74,6 +77,7 @@ a{
 .first h2{
     font-size: 1.7rem;
     margin-bottom: 2rem;
+    font-weight: bold;
 }
 
 .sub_heading{
@@ -106,7 +110,7 @@ a{
 
 
 .second .screen img{
-    width: 100%;
+    max-width: 100%;
 }
 
 .conversation{
@@ -123,7 +127,7 @@ a{
 
 
 .community img, .message img{
-    width: 20%;
+    max-width: 20%;
 }
 
 .community{
@@ -156,7 +160,7 @@ a{
 }
 
 .bottom-mobile-2, .top-mobile-2,.footer-top-mobile,.section-top-mobile-1,.section-bottom-mobile-1{
-    max-width: 100%;
+    width: 100%;
 }
 
 .third div img, .fouth div img, .fifth div img{
@@ -232,7 +236,7 @@ footer{
 
 .subscribe input{
     display: block;
-    padding: 1rem;
+    padding: 0.8rem;
     width: 100%;
     border-radius: 7px;
     margin-bottom: 1rem;
@@ -240,7 +244,7 @@ footer{
 
 .subscribe a{
     text-decoration: none;
-    padding: 1rem 2.5rem;
+    padding: 1rem 2rem;
     color: #fff;
     background-color: var(--Pink);
     letter-spacing: 2px;
@@ -292,7 +296,7 @@ footer{
     max-width: 50%;
 }
 
-
+}
 
 
 

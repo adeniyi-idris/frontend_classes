@@ -240,13 +240,13 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding:1.5rem 7rem;
+    padding:1rem 7rem;
     border-radius: 10px;
     box-shadow: 0px 5px 10px var(--Orange);
 }
 
 .cart img{
-    color: var(--White);
+    margin-right: 0.5rem;
     
 }
 

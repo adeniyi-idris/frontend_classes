@@ -57,10 +57,10 @@ a{
 
 .cta a{
     color: var(--Pink);
-    padding: 0.3rem 1rem;
+    padding: 0.3rem 0.9rem;
     border: 1px solid var(--Pink);
     border-radius: 50px;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .first{

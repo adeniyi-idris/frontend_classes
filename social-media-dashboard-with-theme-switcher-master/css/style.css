@@ -10,7 +10,7 @@
 
 .row{
     margin: 1rem 1rem;
-    max-width: 376
+    
 }
 
 
@@ -19,7 +19,7 @@
     --BrightRed: hsl(356, 69%, 56%);
     --Facebook: hsl(208, 92%, 53%);
     --Twitter: hsl(203, 89%, 53%);
-    --Instagram: linear-gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+    --Instagram: linear-gradient(hsl(37, 97%, 70%) to hsl(329, 70%, 58%));
     --YouTube: hsl(348, 97%, 39%);
     --VeryDarkBlueBG: hsl(230, 17%, 14%);
     --VeryDarkBlueToBGPattern: hsl(232, 19%, 15%);
@@ -31,7 +31,8 @@
     --LightGrayishBlueCardBG: hsl(227, 47%, 96%);
     --DarkGrayishBlueText: hsl(228, 12%, 44%);
     --VeryDarkBlueText: hsl(230, 17%, 14%);
-
+    --Toggle: linear-gradient( hsl(210, 78%, 56%) to hsl(146, 68%, 55%))
+    --Toggle: hsl(230, 22%, 74%)
 }
 
 body{
@@ -74,7 +75,7 @@ body{
 }
 
 img{
-    max-width:5%;
+    max-width:100%;
 }
 
  .switch input{
@@ -123,16 +124,84 @@ input:checked + .slider:before{
 
 
 
-
-
+section.card .upper{
+    /*  display: grid;
+    grid-template-columns: repeat(autofit, min-max(200px, 1fr)); */
+    text-align: center;
+    gap: 1rem;
+}
 
 .socials{
+    background-color: var(--DarkDesaturatedBlueCardBG);
     color: var(--WhiteText);
+    padding: 1rem 0rem;
+}
+
+.lower{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.sub_heading{
+    color: var(--WhiteText);
+    margin-bottom: 1.5rem;
+}
+
+.sub_socials{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    background-color: var(--DarkDesaturatedBlueCardBG);
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.info p{
+    color: var(--DesaturatedBlueText);
+}
+
+
+.rating{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.rating h3{
+    color: var(--WhiteText);
+}
+
+.up{
+    color: var(--LimeGreen);
+}
+
+.down{
+    color: var(--BrightRed);
+}
+
+.indicator{
+    display: flex;
+    align-items: center;
+}
+
+/*
+
+.socials{
+   
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     text-align: center;
-    background-color: var(--DarkDesaturatedBlueCardBG);
+    
     margin-bottom: 2rem;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
@@ -173,65 +242,11 @@ input:checked + .slider:before{
 }
 
 .third{
-    border-top:2.5px solid linear-gradient(hsl(37, 97%, 70%) to hsl(329, 70%, 58%));
+    border-top:2.5px solid var(--Instagram)
 }
 
 .fouth{
     border-top:2.5px solid var(--YouTube);
 }
 
-.sub_heading{
-    color: var(--WhiteText);
-    margin-bottom: 1.5rem;
-}
-
-
-
-.sub_socials{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    padding: 1.5rem 1rem;
-    background-color: var(--DarkDesaturatedBlueCardBG);
-    margin-bottom: 1.5rem;
-    border-radius: 5px;
-}
-
-
-.info{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1.5rem;
-}
-
-.info p{
-    color: var(--DesaturatedBlueText);
-}
-
-
-.rating{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.rating h3{
-    color: var(--WhiteText);
-}
-
-.up{
-    color: var(--LimeGreen);
-}
-
-.down{
-    color: var(--BrightRed);
-}
-
-
-
-
-
-
-
-
-
+ */

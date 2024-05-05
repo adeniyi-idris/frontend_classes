@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans" sans-serif;
+}
+
+:root{
+    --Orange: hsl(26, 100%, 55%);
+    --PaleOrange: hsl(25, 100%, 94%);
+    --VeryDarkBlue: hsl(220, 13%, 13%);
+    --DarkGrayishBlue: hsl(219, 9%, 45%);
+    --GrayishBlue: hsl(220, 14%, 75%);
+    --LightGrayishBlue: hsl(223, 64%, 98%);
+    --White: hsl(0, 0%, 100%);
+    --Blackwith75opacityforlightboxbackground: hsl(0, 0%, 0%);
+}
+
+
+.main_header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:1rem 1rem;
+}
+
+.logo{
+    margin-left: 2rem;
+}
+
+.avatar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile{
+    width: 30%;
+}
+
+.nav_bar{
+    background-color: rgba(14, 14, 14, 0.405);
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    transition: ease-in-out cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: 1;
+}
+
+.nav_list{
+    list-style: none;
+    position: fixed;
+    background-color: var(--White);
+    top: 0%;
+    right:40%;
+    text-align: center;
+    padding: 2rem 2rem;
+    width: 15rem;
+    z-index: 2;
+}
+
+.nav_items{
+    text-decoration: none;
+    display: block;
+    color: var(--DarkGrayishBlue);
+    transition: ease-in-out 0.2s;
+    padding: 1rem;
+}
+
+.menuContainer{
+    display: block;
+    width: 32px;
+    margin-right: 0;
+    margin-left: auto;
+    position: relative;
+}
+
+.menuButton{
+    position: absolute;
+    z-index: 3;
+}
+
+.hamburger, .hamburger::before, .hamburger::after{
+    display: block;
+    background-color: var(--DarkGrayishBlue);
+    width: 2rem;
+    position: absolute;
+    z-index: 1000;
+    height: 3px;
+}
+
+.hamburger::before{
+    content: "";
+    top: -6px;
+}
+
+
+.hamburger::after{
+    content: "";
+    top: 6px;
+}
+
+#input{
+    opacity: 0;
+}
+
+#input:checked{
+    position: absolute;
+    right: 1rem;
+    z-index: 3;
+}
+
+
+
+#input:checked ~ .menuContainer .hamburger{
+    transform: rotate(-0.625turn);
+}
+
+#input:checked ~ .menuContainer .hamburger::before{
+    transform: rotate(-90deg) translate(-6px);
+}
+
+#input:checked ~ .menuContainer .hamburger::after{
+    opacity: 0;
+}
+#input:checked + .nav_bar{
+    transform: translate(0%);
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+.hero{
+    width: 100%;
+}
+
+.swipe{
+    position: relative;
+}
+
+.previous{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -10%);
+    background-color: var(--White);
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+}
+
+.previous img{
+    padding: 10px;
+}
+
+.next{
+    position: absolute;
+    top: 50%;
+    right: 0.5%;
+    transform: translate(-50%, -6%);
+    background-color: var(--White);
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+}
+
+.next img{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 14px;
+}
+
+.second{
+    padding: 0 1.2rem;
+}
+
+.description h4{
+    color: var(--Orange);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+.description h1{
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+    word-spacing: 0.3rem;
+}
+
+.description p{
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem 0;
+    margin-bottom: 0.5rem;
+}
+
+.price .discount{
+    display: inline-block;
+    padding: 0.5rem;
+    color: var(--Orange);
+    background-color: var(--PaleOrange);
+    text-align: center;
+    border-radius: 5px;
+    margin-left: -7.5rem;
+}
+
+.price .slashed{
+    color: var(--DarkGrayishBlue);
+}
+
+
+.quantity{
+    background-color: var(--LightGrayishBlue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.cta{
+    background-color: var(--Orange);
+    color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:1.5rem 7rem;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px var(--Orange);
+}
+
+.cart img{
+    color: var(--White);
+    
+}
+
+
+
+
+
+

@@ -3,3 +3,6 @@
 Development for social media dashboard:
 
 Stage one
+##
+Learned about responsive deign
+I also made the News Home Page Project responsive

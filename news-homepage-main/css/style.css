@@ -47,7 +47,6 @@
     left: 0;
     bottom: 0;
     transition: ease-in-out cubic-bezier(0.075, 0.82, 0.165, 1);
-    
 }
 
 .nav_list{

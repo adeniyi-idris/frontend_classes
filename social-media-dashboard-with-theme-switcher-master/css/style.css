@@ -179,11 +179,11 @@ input:checked + .slider:before{
 }
 
 .card2{
-     display: grid; 
-     grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); 
-     padding-top: 2rem; 
-     gap: 3rem; 
-     text-align: center; 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));  
+    padding-top: 0.5rem; 
+    gap: 3rem; 
+    text-align: center; 
 }
 
 .socials{
@@ -196,7 +196,26 @@ input:checked + .slider:before{
     background-color: var(--DarkDesaturatedBlueCardBG);
 }
 
+.wo{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
+.wo p{
+    margin-left: 0.4rem;
+}
+
+.mo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mo img{
+    max-width: 100%;
+}
 
 .socials::before{
     content: "";
@@ -210,16 +229,15 @@ input:checked + .slider:before{
     background-color: var();
 }
 
-.lower{
+
+/* .lower{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-
+    justify-content: space-between; */
 
 .sub_heading{
     color: var(--WhiteText);
-    margin-bottom: 1.5rem;
+    margin-top: 3.5rem;
 }
 
 .sub_socials{
@@ -266,47 +284,18 @@ input:checked + .slider:before{
     align-items: center;
 }
 
-
-/*
-
-.socials{
-   
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    text-align: center;
-    
-    margin-bottom: 2rem;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    padding-bottom: 1rem;
-}
-
-.socials_heading{
-    display: flex;
-    text-align: center;
-    justify-items: center;
-}
-
-.socials p{
-    color: var(--DesaturatedBlueText);
-    margin-top: 1.5rem;
-}
-
 .follower{
-    margin-top: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .follower h1{
-    font-size: 42px;
+    color: var(--WhiteText);
 }
 
-.socials .follower h5{
+.follower h5{
     color: var(--DesaturatedBlueText);
-    margin-bottom: 1.5rem;
 }
 
-
-
-
- */
+.socials_heading{
+    color: var(--DesaturatedBlueText);
+}

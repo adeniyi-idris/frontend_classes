@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   
   <title>Idris | E-commerce product page</title>
 
@@ -20,89 +21,118 @@
   <main>
     <header class="main_header">
 
-      <div class="menuContainer">
-        <label for="input" class="menuButton">
-          <span class="hamburger">
 
-          </span>
-        </label>
-      </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+      
+      
+        <!-- toggle-btn -->
+          <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+        <!-- logo -->
+          <a class="navbar-brand" href="#"><img src="./images/logo.svg" alt="logo"></a>
+        
+      
+        <!-- sideBar -->
+          <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <!-- sideBar Head -->
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <!-- sideBar Body -->
+            <div class="offcanvas-body">
+      
+              <ul class="navbar-nav justify-content-end flex-grow-1">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Collections</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Men</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Women</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+      
 
-
-
-      <div class="logo">
-        <img src="./images/logo.svg" alt="logo">
-      </div>
-
-
-      <input type="checkbox" name="checkbox" id="input">
-
-
-
-      <nav class="nav_bar">
-        <ul class="nav_list">
-          <li><a href="#" class="nav_items">Collections</a></li>
-          <li><a href="#" class="nav_items">Men</a></li>
-          <li><a href="#" class="nav_items">Women</a></li>
-          <li><a href="#" class="nav_items">About</a></li>
-          <li><a href="#" class="nav_items"> Contact</a></li>
-        </ul>
+            </div>
+          </div>
+          <div class="avatar">
+            <img src="./images/icon-cart.svg" alt="cart">
+            <img src="./images/image-avatar.png" alt="profile" class="profile">
+          </div>
+        </div>
       </nav>
-
-
-
-      <div class="avatar">
-        <img src="./images/icon-cart.svg" alt="cart">
-        <img src="./images/image-avatar.png" alt="profile" class="profile">
-      </div>
-
+ 
     </header>
 
 
 
-  <section>
-    <div class="wrapper">
-      <div class="swipe">
-        <img src="./images/image-product-1.jpg" alt="hero" class="hero">
-        <div class="previous">
-          <img src="./images/icon-previous.svg" alt="previous">
-        </div>
-        <div class="next">
-          <img src="./images/icon-next.svg" alt="next">
-        </div>
-      </div>
-    </div>
-  </section>
+    <section class="big">
 
-
-  <section>
-    <div class="wrapper second">
-      <div class="description">
-        <h4>SNEAKER COMPANY</h4>
-        <h1> Fall Limited Edition Sneakers</h1>
-        <p>
-          These low-profile sneakers are your perfect casual wear companion. Featuring a 
-          durable rubber outer sole, they’ll withstand everything the weather can offer.
-        </p>
-      </div>
-      <div class="price">
-        <h1> $125.00</h1>
-        <h4 class="discount">50%</h4>
-        <h4 class="slashed">$250.00</h4>
-      </div>
-      <div class="quantity">
-        <img src="./images/icon-plus.svg" alt="plus">
-        <h4>0</h4>
-        <img src="./images/icon-minus.svg" alt="minus">
-      </div>
-      <div class="cta">
-        <div class="cart">
-          <img src="./images/icon-cart1.svg" alt="cart">
+      <section class="mt-5 d-flex flex-column section1">
+        <div class="wrapper">
+          <div class="swipe">
+            <img src="./images/image-product-1.jpg" alt="hero" class="hero">
+            <div class="move">
+              <div class="previous">
+                <img src="./images/icon-previous.svg" alt="previous">
+              </div>
+              <div class="next">
+                <img src="./images/icon-next.svg" alt="next">
+              </div>
+            </div>
+          </div>
         </div>
-        <p>Add to cart</p>
-      </div>
-    </div>
-  </section>
+        <div class="w-100 d-none d-sm-none d-lg-block p-2">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="">
+          <img src="./images/image-product-2-thumbnail.jpg" alt="">
+          <img src="./images/image-product-3-thumbnail.jpg" alt="">
+          <img src="./images/image-product-4-thumbnail.jpg" alt="">
+        </div>
+      </section>
+    
+    
+      <section class="section2">
+        <div class="wrapper second">
+          <div class="description">
+            <h4>SNEAKER COMPANY</h4>
+            <h1> Fall Limited Edition Sneakers</h1>
+            <p>
+              These low-profile sneakers are your perfect casual wear companion. Featuring a 
+              durable rubber outer sole, they’ll withstand everything the weather can offer.
+            </p>
+          </div>
+          <div class="price">
+            <h1> $125.00</h1>
+            <h4 class="discount">50%</h4>
+            <h4 class="slashed">$250.00</h4>
+          </div>
+          <div class="quantity">
+            <img src="./images/icon-plus.svg" alt="plus">
+            <h4>0</h4>
+            <img src="./images/icon-minus.svg" alt="minus">
+          </div>
+          <div class="cta">
+            <div class="cart">
+              <img src="./images/icon-cart1.svg" alt="cart">
+            </div>
+            <p>Add to cart</p>
+          </div>
+        </div>
+      </section>
+
+    </section>
+  
   </main>
  
   
@@ -114,5 +144,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">idris</a>.
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

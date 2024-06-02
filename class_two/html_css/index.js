@@ -66,9 +66,27 @@ alert(yi > 5 ? "signed in successful": "password incorrect")
 
 
 
+const tree = {
+    branches: 30, 
+    name: 'mango',
+    color: 'green',
+    wave: function(){
+        alert('the'+ " " + this.name + " " + 'tree has' + " " + this.branches + "branches")
+    },
+    
+    design: function(){
+        document.querySelector('#demo').innerHTML= "this"+ " "+ this.name + " " +" tree is color"+ this.color
+    },
+
+    breaks: function(){
+        document.querySelector('.lol').innerHTML= 'the '+ this.name+" " + "tree lost"+ " " + this.branches+'branches'
+    }
+} 
 
 
-
+tree.wave()
+tree.design()
+tree.breaks()
 
 
 
